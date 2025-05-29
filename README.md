@@ -4,11 +4,11 @@
 
 ## 环境配置
 
-请确保已正确安装 MMDetection 及其依赖环境。
+请确保已正确安装 MMDetection 及其依赖环境，详细请参考README_ORI.md的内容，遵循MMDetection框架完成基本环节配置。
 
 ```bash
 # 激活环境
-conda activate openmm
+conda activate mmdetection
 # 安装依赖（如未安装）
 pip install -r requirements.txt
 ```
@@ -36,6 +36,7 @@ mmdetection/data/VOCdevkit/
 ## 训练流程
 
 ### 训练 Mask R-CNN
+这里需要对VOC处理成coco format，相应的voc2coco.py或许能够帮助到实现这一步。
 
 ```bash
 bash tools/train_mask_rcnn_voc.sh
