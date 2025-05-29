@@ -108,7 +108,7 @@ python tools/visualize_tensorboard.py
 - **优化器**：
   - Mask R-CNN：SGD（momentum=0.9, weight_decay=0.0001）
   - Sparse R-CNN：AdamW（weight_decay=0.0001）
-- **训练轮次**：4 epoch（数据集重复3次，等效12 epoch）
+- **训练轮次**：10 epoch（数据集重复3次，等效30 epoch）
 - **损失函数**：
   - Mask R-CNN：CrossEntropyLoss、L1Loss
   - Sparse R-CNN：FocalLoss、L1Loss、GIoULoss、CrossEntropyLoss
@@ -116,8 +116,8 @@ python tools/visualize_tensorboard.py
 
 ## 模型权重
 
-- Mask R-CNN：`work_dirs/mask_rcnn_voc_coco_format/epoch_4.pth`
-- Sparse R-CNN：`work_dirs/sparse_rcnn_voc/epoch_4.pth`
+- Mask R-CNN：`work_dirs/mask_rcnn_voc_coco_format/epoch_10.pth`
+- Sparse R-CNN：`work_dirs/sparse_rcnn_voc/epoch_10.pth`
 
 ## 可视化结果目录
 
